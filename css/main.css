@@ -10,6 +10,14 @@ a:link {
     text-decoration: none;
 }
 
+navPrimary, .navPrimary-item {
+    display: none;
+}
+
+.mobileNav {
+    color: white;
+}
+
 /**************************
    HEADERS
 **************************/
@@ -83,3 +91,18 @@ footer a:hover {
         max-height: 60vh;
     }
 }
+
+@media only screen and (min-width: 1000px) {
+.navPrimary {
+    width: 563px;
+    color: white;
+}
+
+.navPrimary-item {
+    display: inherit;
+}
+    
+.mobileNav {
+    display: none;
+}
+
