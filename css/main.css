@@ -1,0 +1,85 @@
+/**************************
+   UNIVERSAL STYLES
+**************************/
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/**************************
+   HEADERS
+**************************/
+.main-header {
+    min-height: calc(100vh - 56px);
+    background: url(../img/living-room.jpg) no-repeat #585858;
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.header-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
+    background-size: contain;
+}
+
+.secondary-header {
+    min-height: 30vh;
+    background: url(../img/exterior.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+/**************************
+   GALLERY
+**************************/
+.gallery {
+    padding-top: 60px;
+    margin-top: 100px;
+}
+
+
+/**************************
+   FOOTER
+**************************/
+footer {
+    background-color: #303030;
+    text-align: center;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: lightgray;
+}
+
+
+/**************************
+   MEDIA QUERIES
+**************************/
+
+@media only screen and (min-width: 1100px) {
+    .gallery {
+        padding-top: 200px;
+    }
+    .gallery,
+    .gallery img {
+        margin: auto;
+        max-width: 60vw;
+        max-height: 60vh;
+    }
+}
