@@ -146,6 +146,19 @@ footer {
     margin-top: 100px;
 }
 
+/**************************
+   AMENITIES
+**************************/
+.amenitiesContent {
+    margin: 30px 20px 100px;
+}
+
+/**************************
+    FLOOR PLANS 
+**************************/
+.floorplanContent {
+    margin: 20px;
+}
 
 /**************************
    MEDIA QUERIES
@@ -206,11 +219,16 @@ footer {
     .item-5 {
         padding: 70px;
     }
+    
+    /*Amenities Content*/
+    .amenitiesContent {
+        margin: 30px 30% 100px;
+    }
+    
+    /*Floorplans Content*/
+    .floorplanContent {
+        width: 60%;
+        margin: 20px auto;
+    }
 }
 
-/*
-@media only screen and (min-width: 1600px) {
-    .information {
-        width: 50%;
-    }
-}*/
