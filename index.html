@@ -13,14 +13,15 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <!-- CUSTOM CSS -->
         <link href="css/main.css" rel="stylesheet">
+
     </head>
     
-    <body>
+    <body class="indexBody">
         <!-- NAVIGATION START -->
         <nav>
             <!-- Navigation menu with three links: amenities, floorplans, and gallery. Dropdown with two links: applicant login and resident login -->
             <nav class="navbar fixed-top navbar-dark bg-dark">
-              <a class="navbar-brand" href="index.html">Example Apartments</a>
+              <a class="navbar-brand" href="index.html">Example</a>
               <div class="navPrimary d-flex justify-content-between align-items-center">
                   <a class="navPrimary-item" href="#">Applicant Login</a>
                   <a class="navPrimary-item" href="#">Resident Login</a>
@@ -76,11 +77,52 @@
         <!-- HEADER END -->
         
         <!-- MAIN CONTENT START -->
-        <div>
-            <h1>Example Apartments</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
+        <div class="boxContent">
+            <div class="information item item-1">
+                <h1>Example Apartments</h1>
+                <img class="textLine" src="img/line.png" alt="line">
+                <p>Welcome home to Example Apartments! There is so much to love in our community, from our location to our abundance of amenities. Our apartments are also newly renovated and feature stainless-steel appliances, wood flooring throughout, new fixtures, and modern touches. Make Example your new home today! We have several exciting deals going on right now, so make sure to call today to learn more!</p>
+            </div>
+            <div class="item item-2">
+                <img class="indexPhoto" src="img/clubhouse.jpg" alt="Clubhouse image">
+            </div>
+
+            <div class="information item item-3">
+                <h1>Floor Plans</h1>
+                <img class="textLine" src="img/line.png" alt="line">
+                <p>Our beautifully designed floor plans are guaranteed to meet your every need! We offer one-bedroom, two-bedroom, and three-bedroom layouts and also have select townhomes. Whether you are looking for a temporary home or settling down in your forever home, we are the place for you! Click the link below to get more details about our extensive floor plan options.</p>
+                <a class="btn btn-secondary btn-lg z-depth-5" href="floorplans.html" role="button">View Floor Plans</a>
+            </div>
+            <div class="item item-4">
+                <img class="indexPhoto" src="img/kitchen.jpg" alt="Kitchen image">
+            </div>
+
+            <div class="information item item-5">
+                <h1>Amenities</h1>
+                <img class="textLine" src="img/line.png" alt="line">
+                <p>Designed to accommodate any lifestyle, Example Apartments provides everything, from a resort-style pool and clubhouse area to a fitness center and dog park. A thoughtful amenity package means you never have to venture far to find solitude, excitement, excellent cuisine, or wellness. Click the link below to see all of the amenities you'll have!</p>
+                <a class="btn btn-secondary btn-lg z-depth-5" href="amenities.html" role="button">View Amenities</a>
+            </div>
+            <div class="item item-6">
+                <img class="indexPhoto" src="img/gym.jpg" alt="Gym image">
+            </div>
+            </div>
+        
         <!-- MAIN CONTENT END -->
+        
+        <!-- POP-UP BANNER START -->
+        <div class="rentPopUp">
+            <div class="rentPopUpInner">
+                <div class="rentPopUpContent">
+                    <h2>Free Rent!</h2>
+                    <p id="rentTextInfo">For a limited time only, get one month of free rent when you sign a 13-month lease!</p>
+                    <p><img src="img/exterior.jpg" alt="Exterior image"/></p>
+                    <p><a href="tel:502-123-4567">Call us at 502-123-4567 for more info.</a></p>
+                    <p><a href="#" class="closeButton">Close</a></p>
+                </div>
+            </div>
+        </div>
+        <!-- POP-UP BANNER END -->
         
         <!--FOOTER START-->
         <footer class="fixed-bottom">
@@ -96,12 +138,12 @@
         <!--FOOTER END-->
         
         <!-- BOOTSTRAP JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
         <!-- FEATHER ICONS -->
 
         <!-- CUSTOM JS-->
-        <script src="app.js"></script>
+        <script src="JavaScript/app.js"></script>
     </body>
 </html>

@@ -6,6 +6,17 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    color:white;
+}
+
+a:hover {
+    color: lightgrey;
+}
+
+/**************************
+   NAVBAR
+**************************/
 a:link {
     text-decoration: none;
 }
@@ -14,21 +25,17 @@ navPrimary, .navPrimary-item {
     display: none;
 }
 
-.mobileNav {
-    color: white;
-}
-
 /**************************
    HEADERS
 **************************/
 .main-header {
     min-height: calc(100vh - 56px);
-    background: url(../img/living-room.jpg) no-repeat #585858;
+    background: url(../img/living-room.jpg) no-repeat #444444;
     background-blend-mode: overlay;
     background-position: center;
     background-size: cover;
     position: relative;
-    color: white;
+    margin: 0;
 }
 
 .header-content {
@@ -39,6 +46,7 @@ navPrimary, .navPrimary-item {
     transform: translate(-50%, -50%);
     text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8);
     background-size: contain;
+    color: white;
 }
 
 .secondary-header {
@@ -47,16 +55,7 @@ navPrimary, .navPrimary-item {
     background-position: center;
     background-size: cover;
     position: relative;
-    color: white;
 }
-/**************************
-   GALLERY
-**************************/
-.gallery {
-    padding-top: 60px;
-    margin-top: 100px;
-}
-
 
 /**************************
    FOOTER
@@ -67,12 +66,84 @@ footer {
     color: white;
 }
 
-footer a {
-    color: white;
+/**************************
+   INDEX
+**************************/
+/*PopUp*/
+.indexBody {
+    position: relative;
+    height: 100%;
+    background-color: #c1b3a6;
+}
+.rentPopUp {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    Left:0;
+    color: #FFF;
+    z-index: 9999;
+    display: none;
 }
 
-footer a:hover {
-    color: lightgray;
+.rentPopUpInner{
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.rentPopUpInner img{
+    max-width: 100%
+}
+
+.rentPopUpContent {
+    padding-top: 200px;
+}
+
+.rentPopUpContent a {
+    text-decoration: none;
+}
+
+.rentPopUpContent a:hover {
+    color: lightgrey;
+}
+
+#rentTextInfo {
+    display: none;
+}
+
+/*Main Page*/
+.information p {
+    font-size: 1.25rem;
+}
+
+.indexPhoto {
+    width: 100%;
+}
+
+.textLine {
+    max-height: 50px;
+}
+
+.boxContent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item-1,
+.item-3,
+.item-5 {
+    padding: 20px;
+}
+
+/**************************
+   GALLERY
+**************************/
+.gallery {
+    padding-top: 60px;
+    margin-top: 100px;
 }
 
 
@@ -80,6 +151,7 @@ footer a:hover {
    MEDIA QUERIES
 **************************/
 
+/*Gallery Sizing*/
 @media only screen and (min-width: 1100px) {
     .gallery {
         padding-top: 200px;
@@ -92,17 +164,53 @@ footer a:hover {
     }
 }
 
-@media only screen and (min-width: 1000px) {
-.navPrimary {
-    width: 563px;
-    color: white;
-}
+@media only screen and (min-width: 1025px) {
+    /*NavBar*/
+    .navPrimary {
+        width: 563px;
+    }
 
-.navPrimary-item {
-    display: inherit;
-}
+    .navPrimary-item {
+        display: inherit;
+    }
+
+    .mobileNav {
+        display: none;
+    }
+
+    #rentTextInfo {
+        display: inherit;
+    }
+
+    /*Index Content*/
+    .boxContent {
+        flex-direction: row;
+    }
     
-.mobileNav {
-    display: none;
+    .item{
+        flex: 1 0 50%;
+       padding: 10px;
+       overflow: hidden;
+    }
+    
+    .item-2 {
+        order: -1;
+    }
+    
+    .item-5 {
+        order: 7;
+    }
+    
+    .item-1,
+    .item-3,
+    .item-5 {
+        padding: 70px;
+    }
 }
 
+/*
+@media only screen and (min-width: 1600px) {
+    .information {
+        width: 50%;
+    }
+}*/
